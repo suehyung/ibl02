@@ -6,10 +6,10 @@
 /* gradients - as background or as filter over images */
 
 body, html {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 		
 body {
@@ -81,15 +81,25 @@ object:focus {
 	outline: none;
 }
 
+object {
+
+}
+
 .box {
-	background-color: rgb(236, 236, 236);
-	width: 800px;
+	background-color: rgba(114, 114, 114, 0.349);
+	width: 100%;
 	margin-bottom: 16px;
 	margin-top: 16px;
-	display: inline-flex;
-	justify-content: space-between; 
+	/* display: inline-flex; */
+	/* justify-content: space-between;  */
 }
 
 table {
 	width: 768px;
+	border: 1px solid #dddddd;
+}
+
+td {
+	text-align: left;
+	padding: 8px;
 }
