@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <!-- <link rel="shortcut icon" href="http://[insert path]favicon-96x96.png" type="image/x-icon"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" media="(max-width: 659px)"  href="css/main.css">
-    <link rel="stylesheet" media="(min-width: 660px)"  href="css/main660.css">
+    <link rel="stylesheet" media="(max-width: 659px)"  href="css/app.css">
+    <link rel="stylesheet" media="(min-width: 660px)"  href="css/app660.css">
   </head>
 
   <body>
@@ -18,40 +18,49 @@
 
 		</header>
 
-		<main>
-			<object class="box" data="league standings 2017.htm"></object>
+		<main class="parallax-wrapper">
+			<section id="group1" class="parallax-group">
+				<div class="parallax background bg1"></div>
+				<object data="league standings 2017.htm" width="100%" height="500px" class="static"></object>
+			</section>
 			
-			<div class="box">
-				Rules
-				<!-- open and download buttons -->
-			</div>
-			
-			<div class="box">
-				History
-				<table>
-					<tr>
-						<td>2017</td>
-						<td>logo</td>
-						<td>Arsenal</td>
-						<td>standings button</td>
-					</tr>
-					<!-- x15 -->
-				</table>
-			</div>
+			<section id="group2" class="parallax-group">
+				<div class="parallax background bg2"></div>
+				<div class="parallax base box">
+					<h2>History</h2>
+					<table>
+						<tr>
+							<td>2017</td>
+							<td>logo</td>
+							<td>Arsenal</td>
+							<td>standings button</td>
+						</tr>
+						<!-- x15 -->
+					</table>
+				</div>
+				<div class="parallax foreground box">
+					<h2>Rules</h2>
+					<!-- open and download buttons -->
+				</div>
+			</section>
 
-			<div class="box">
-				Records
-				<table>
-					<tr>
-						<td>Most Wins, Season</td>
-						<td>114</td>
-						<td>2004</td>
-						<td>logo</td>
-						<td>Arsenal</td>
-					</tr>
-					<!-- x15 -->
-				</table>
-			</div>
+			<section id="group3" class="parallax-group">
+				<div class="parallax background bg3"></div>
+				<div class="parallax base box">
+					<h2>Records</h2>
+					<table>
+						<tr>
+							<td>Most Wins, Season</td>
+							<td>114</td>
+							<td>2004</td>
+							<td>logo</td>
+							<td>Arsenal</td>
+						</tr>
+						<!-- x15 -->
+					</table>
+				</div>
+			</section>
+		
 		</main>
 
 		<footer>
