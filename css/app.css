@@ -74,6 +74,34 @@ body {
 	height: 600px;
 }
 
+h2 {
+	font-family: Lobster, serif;
+	font-size: 28px;
+}
+
+table {
+	font-family: Heebo, sans-serif;
+}
+
+.button{
+	background-color: transparent;
+	border: 3px solid teal;
+	color: teal;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: rgba(0,212,255,.2);
+	color: white;
+}
+
 .bg1::after {
 	background-image: url('../img/bg1.jpg');
 	background-size: cover;
