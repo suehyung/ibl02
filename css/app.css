@@ -1,0 +1,86 @@
+/* vibrant color palette */
+/* use translucency */
+/* diagonal lines */
+/* diagonal cross-hatch in boxes */
+/* parallax images */
+/* gradients - as background or as filter over images */
+
+
+body,html {
+	margin:0;
+	padding:0;
+}
+
+body {
+	transform: translateZ(0);
+}
+
+.wrapper {
+	/* Set to 100vh for the effect to work for the full height of the viewport. */
+	height: 100vh;
+	/* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+	overflow-x: hidden;
+	/* Enable scrolling on the page. */
+	overflow-y: auto;
+	/* This is the simulated distance from the viewport to transformed objects.*/
+	perspective: 2px;
+}
+
+.section {
+	position: relative;
+	height: 700px;
+}
+
+.section1 {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 600px;
+	
+	/* For text formatting. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: -50px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	
+	/* Move pseudo-element further back so it moves more slowly, then scale it back up to fill the viewport.
+	   Scale = 1 + (translateZ * -1) / perspective */
+	transform: translateZ(-1.5px) scale(1.75);
+
+	/* Keep the image from overlapping sibling elements. */ 
+	z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+	background: linear-gradient(60deg, rgba(0,0,0,1) 30%, rgba(0,212,255,1) 100%);
+}
+
+/* Sets the background images and fits to cover screen */
+.bg1::after {
+	background-image: url('../img/bg1.jpg');
+	background-size: cover;
+}
+
+.bg2::after {
+	background-image: url('../img/bg2.jpg');
+	background-size: cover;
+	/* margin-top: 380px; */
+}
+
+.bg3::after {
+	background-image: url('../img/bg3.jpg');
+	background-size: cover;
+	/* margin-top: 900px; */
+}
