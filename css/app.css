@@ -16,14 +16,14 @@ body {
 }
 
 .wrapper {
-	/* Set to 100vh for the effect to work for the full height of the viewport. */
 	height: 100vh;
-	/* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+	/* Set to 100vh for the effect to work for the full height of the viewport. */
 	overflow-x: hidden;
-	/* Enable scrolling on the page. */
+	/* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
 	overflow-y: auto;
-	/* This is the simulated distance from the viewport to transformed objects.*/
+	/* Enable scrolling on the page. */
 	perspective: 2px;
+	/* This is the simulated distance from the viewport to transformed objects.*/
 }
 
 .section {
@@ -32,42 +32,48 @@ body {
 }
 
 .section1 {
-	/* Needed for children to be absolutely positioned relative to the parent. */
 	position: relative;
-	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	/* Needed for children to be positioned relative to the parent. */
 	height: 600px;
-	
-	/* For text formatting. */
+	/* The height of the container */	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;
 	text-shadow: 0 0 5px #000;
+	/* For text formatting. */
 }
 
 .parallax::after {
-	/* Display and position the pseudo-element */
 	content: " ";
 	position: absolute;
 	top: -50px;
 	right: 0;
 	bottom: 0;
 	left: -6px;
-	
-	/* Move pseudo-element further back so it moves more slowly, then scale it back up to fill the viewport.
-	   Scale = 1 + (translateZ * -1) / perspective */
-	transform: translateZ(-1.5px) scale(1.75);
+	/* Display and position the pseudo-element */	
 
-	/* Keep the image from overlapping sibling elements. */ 
+	transform: translateZ(-1.5px) scale(1.75);
+	/* Move pseudo-element further back so it moves more slowly, then scale it back up to fill the viewport.
+		 Scale = 1 + (translateZ * -1) / perspective */
 	z-index: -1;
+	/* Keep the image from overlapping sibling elements. */ 
 }
 
-/* The styling for the static div. */
 .static {
 	background: linear-gradient(60deg, rgba(0,0,0,1) 30%, rgba(0,212,255,1) 100%);
 }
 
-/* Sets the background images and fits to cover screen */
+.standings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 1100px;
+	height: 600px;
+}
+
 .bg1::after {
 	background-image: url('../img/bg1.jpg');
 	background-size: cover;
