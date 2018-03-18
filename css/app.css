@@ -38,10 +38,10 @@ body {
 	/* The height of the container */	
 
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-content: start;
 	color: white;
-	text-shadow: 0 0 5px #000;
 	/* For text formatting. */
 }
 
@@ -66,39 +66,65 @@ body {
 }
 
 .standings {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 	max-width: 1100px;
 	height: 600px;
 }
 
+.linebreak{
+	width: 100%;
+}
+
 h2 {
-	font-family: Lobster, serif;
-	font-size: 28px;
+	font-family: Raleway, serif;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
 
 table {
-	font-family: Heebo, sans-serif;
+	font-family: Nunito, sans-serif;
+	font-size: 14px;
+	table-layout: fixed;
+	width: 100%;
+	max-width: 600px;
+}
+
+th {
+	text-align: left;
+}
+
+tr th:nth-child(1) {
+  width: 20%;
+}
+
+tr th:nth-child(2) {
+  width: 10%;
+}
+
+tr th:nth-child(3) {
+  width: 40%;
+}
+
+tr th:nth-child(4) {
+  width: 30%;
 }
 
 .button{
 	background-color: transparent;
-	border: 3px solid teal;
-	color: teal;
-	padding: 6px 12px;
+	border: 1px solid lightgrey;
+	color: lightgrey;
+	padding: 5px 12px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
+	font-family: Raleway, sans-serif;
+	font-size: 12px;
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
 }
 
 .button:hover {
-	background-color: rgba(0,212,255,.2);
+	background-color: rgba(211,211,211,.5);
 	color: white;
 }
 
