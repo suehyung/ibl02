@@ -28,7 +28,7 @@ body {
 
 .section {
 	position: relative;
-	height: 630px;
+	height: 550px;
 }
 
 .section1 {
@@ -93,10 +93,15 @@ table {
 	font-size: 14px;
 	color: white;
 	table-layout: fixed;
+	display: flex;
 	width: 100%;
 	max-width: 600px;
 	position: relative;
 	top: -50px;
+}
+
+tr {
+	vertical-align: top; 
 }
 
 tr td:nth-child(1) {
