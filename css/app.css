@@ -109,15 +109,15 @@ tr th:nth-child(1) {
 }
 
 tr th:nth-child(2) {
-  width: 10%;
+  width: 5%;
 }
 
 tr th:nth-child(3) {
-  width: 40%;
+  width: 35%;
 }
 
 tr th:nth-child(4) {
-  width: 30%;
+  width: 40%;
 }
 
 .button{
@@ -141,6 +141,19 @@ tr th:nth-child(4) {
 
 .missing {
 	opacity: .5;
+}
+
+.circle {
+	border-radius: 50%;
+	height: 20px;
+}
+
+.logo {
+	color: darkslategrey;
+	background-color: darkgrey;
+	text-align: center;
+	width: 20px;
+	font-weight: bolder;
 }
 
 .bg1::after {
