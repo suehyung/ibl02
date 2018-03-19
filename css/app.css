@@ -48,7 +48,7 @@ body {
 .section2 {
 	position: relative;
 	min-height: 680px;
-	background: linear-gradient(15deg, rgba(0,0,0,1) 30%, rgb(201, 97, 38) 100%);
+	background: linear-gradient(6deg, rgba(0,0,0,1) 30%, rgb(201, 97, 38) 100%);
 
 	display: flex;
 	flex-wrap: wrap;
@@ -178,6 +178,11 @@ th {
 .missing {
 	opacity: .3;
 	width: 93.79px;
+}
+
+.missing1 {
+	opacity: .3;
+	width: 79.83px;
 }
 
 .circle {
