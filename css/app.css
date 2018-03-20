@@ -111,8 +111,9 @@ h2 {
 	font-size: 90px;
 	color: rgba(255,255,255,.6);
 	position: relative;
-	top: -86px;
+	top: -87px;
 	margin: 0px;
+	z-index: 1;
 }
 
 table {
