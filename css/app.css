@@ -24,11 +24,14 @@ body {
 	/* Enable scrolling on the page. */
 	perspective: 2px;
 	/* This is the simulated distance from the viewport to transformed objects.*/
+	transform-style: preserve-3d;
+	/* Needed for parallax in Firefox */
 }
 
 .section {
 	position: relative;
 	height: 550px;
+	transform-style: inherit;
 }
 
 .section1 {
@@ -37,6 +40,9 @@ body {
 	height: 620px;
 	/* The height of the container */	
 	background: rgba(242,242,242,1);
+	/* Needed for parallax in Firefox */
+	transform-style: inherit;
+	z-index: 1;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -49,6 +55,7 @@ body {
 	position: relative;
 	min-height: 680px;
 	background: linear-gradient(6deg, rgba(0,0,0,1) 30%, rgb(201, 97, 38) 100%);
+	z-index: 1;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -60,7 +67,8 @@ body {
 	position: relative;
 	min-height: 480px;
 	background: linear-gradient(260deg, rgb(26, 80, 30) 0%, rgb(23, 117, 44) 70%);
-
+	z-index: 1;
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
