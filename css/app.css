@@ -67,7 +67,7 @@ body {
 	position: relative;
 	min-height: 480px;
 	background: linear-gradient(260deg, rgb(26, 80, 30) 0%, rgb(23, 117, 44) 70%);
-	z-index: 1;
+	z-index: 2;
 	
 	display: flex;
 	flex-wrap: wrap;
