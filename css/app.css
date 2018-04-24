@@ -104,8 +104,8 @@ body {
 
 .standings {
 	width: 100%;
-	max-width: 984px;
-	height: 590px;
+	max-width: 1000px;
+	height: 600px;
 	position: relative;
 	top: -100px;
 }
