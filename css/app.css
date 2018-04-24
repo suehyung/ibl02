@@ -115,7 +115,7 @@ body {
 }
 
 h2 {
-	font-family: Raleway, serif;
+	font-family: 'Raleway', serif;
 	font-size: 90px;
 	color: rgba(255,255,255,.6);
 	position: relative;
@@ -125,7 +125,7 @@ h2 {
 }
 
 table {
-	font-family: Nunito, sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 14px;
 	color: white;
 	table-layout: fixed;
