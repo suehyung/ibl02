@@ -1012,35 +1012,72 @@ td
 	mso-pattern:black none;}
 .xl143
 	{mso-style-parent:style0;
-	font-size:9.0pt;
-	font-family:Roboto;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;}
+	mso-number-format:"\@";
+	background:#F2F2F2;
+	mso-pattern:black none;}
 .xl144
 	{mso-style-parent:style0;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Roboto;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;}
-.xl145
-	{mso-style-parent:style0;
 	color:white;
 	font-size:9.0pt;
 	font-weight:700;
 	font-family:Roboto;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;
-	background:#244062;
-	mso-pattern:black none;}
-.xl146
-	{mso-style-parent:style0;
-	color:white;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Roboto;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-number-format:"\@";
 	text-align:right;
 	background:#244062;
 	mso-pattern:black none;}
+.xl145
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:right;}
+.xl146
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:right;}
+.xl147
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;}
+.xl148
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;}
+.xl149
+	{mso-style-parent:style0;
+	color:white;
+	font-size:9.0pt;
+	font-weight:700;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	background:#244062;
+	mso-pattern:black none;}
+.xl150
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:right;}
