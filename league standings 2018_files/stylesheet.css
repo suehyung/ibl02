@@ -1074,3 +1074,17 @@ td
 	mso-font-charset:0;
 	mso-number-format:0;
 	text-align:right;}
+.xl151
+	{mso-style-parent:style16;
+	font-size:9.0pt;
+	font-family:Roboto;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00_\)\;\[Red\]\\\(\0022$\0022\#\,\#\#0\.00\\\)";
+	text-align:right;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid silver;
+	border-left:none;
+	background:#F2F2F2;
+	mso-pattern:black none;}
