@@ -31,7 +31,7 @@ body {
 .section {
 	position: relative;
 	height: 550px;
-	transform-style: inherit;
+	/* transform-style: inherit; */
 }
 
 .section1 {
@@ -40,8 +40,8 @@ body {
 	height: 620px;
 	/* The height of the container */	
 	background: rgba(242,242,242,1);
-	/* Needed for parallax in Firefox */
 	transform-style: inherit;
+	/* Needed for parallax in Firefox */
 	z-index: 2;
 
 	display: flex;
