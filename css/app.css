@@ -147,21 +147,13 @@ th {
 }
 
 #history tr th:nth-child(1) {
-<<<<<<< HEAD
 	width: 25%;
-=======
-	width: 15%;
->>>>>>> f6215a49629d25c1add1f2e9a3b91462a73b378a
 	text-align: right;
 	padding-right: 5%;
 }
 
 #history tr th:nth-child(2) {
-<<<<<<< HEAD
   width: 3%;
-=======
-  width: 28px;
->>>>>>> f6215a49629d25c1add1f2e9a3b91462a73b378a
 }
 
 #history tr th:nth-child(3) {
