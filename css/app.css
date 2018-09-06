@@ -265,3 +265,9 @@ caption {
 	background-size: cover;
 	height: 760px;
 }
+
+.shader {
+	background-color: rgba(0,0,0,.4);
+	height: 100%;
+	width: 100%
+}
