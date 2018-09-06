@@ -31,7 +31,8 @@ body {
 .section {
 	position: relative;
 	height: 550px;
-	/* transform-style: inherit; */
+	transform-style: inherit;
+	/* Fixes parallax in Firefox */
 }
 
 .section1 {
