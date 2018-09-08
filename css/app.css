@@ -30,7 +30,7 @@ body {
 
 .section {
 	position: relative;
-	height: 550px;
+	height: 500px;
 	transform-style: inherit;
 	/* Fixes parallax in Firefox */
 }
@@ -54,9 +54,9 @@ body {
 
 .section2 {
 	position: relative;
-	min-height: 680px;
+	min-height: 730px;
 	background: linear-gradient(6deg, rgba(0,0,0,1) 30%, rgb(201, 97, 38) 100%);
-	z-index: 1;
+	z-index: 2;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -66,9 +66,9 @@ body {
 
 .section3 {
 	position: relative;
-	min-height: 480px;
+	min-height: 420px;
 	background: linear-gradient(260deg, rgb(26, 80, 30) 0%, rgb(23, 117, 44) 70%);
-	z-index: 4;
+	z-index: 3;
 	
 	display: flex;
 	flex-wrap: wrap;
@@ -85,22 +85,6 @@ body {
 	left: -6px;
 	transform: translateZ(-1.5px) scale(1.75);
 	z-index: -1;
-}
-
-.parallax::after {
-	content: " ";
-	position: absolute;
-	top: -40px;
-	right: 0;
-	bottom: 0;
-	left: -6px;
-	/* Display and position the pseudo-element */	
-
-	transform: translateZ(-1.5px) scale(1.8);
-	/* Move pseudo-element further back so it moves more slowly, then scale it back up to fill the viewport.
-		 Scale = 1 + (translateZ * -1) / perspective */
-	z-index: -1;
-	/* Keep the image from overlapping sibling elements. */ 
 }
 
 .standings {
@@ -257,13 +241,36 @@ caption {
 	background-image: url('../img/bg2.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 700px;
+	
+	height: 720px;
+	content: " ";
+	position: absolute;
+	top: -80px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	/* Display and position the pseudo-element */	
+
+	transform: translateZ(-1.5px) scale(1.8);
+	/* Move pseudo-element further back so it moves more slowly, then scale it back up to fill the viewport.
+		 Scale = 1 + (translateZ * -1) / perspective */
+	z-index: -1;
+	/* Keep the image from overlapping sibling elements. */ 
 }
 
 .bg3::after {
 	background-image: url('../img/bg3.jpg');
 	background-size: cover;
-	height: 760px;
+	
+	height: 680px;
+	content: " ";
+	position: absolute;
+	top: -80px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	transform: translateZ(-1.5px) scale(1.8);
+	z-index: -1;
 }
 
 .shader {
